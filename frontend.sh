@@ -5,4 +5,7 @@ USER_UID=$(id -u)
 echo $USER_UID
 if [ ${USER_UID} -ne 0 ]; then
   echo you should be a root user to perform this script
+  exit
   fi
+
+  echo script executed as a root user
